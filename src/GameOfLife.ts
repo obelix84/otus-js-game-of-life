@@ -1,6 +1,7 @@
 import {CellularAutomaton} from "./CellularAutomaton";
 
 export class GameOfLife extends CellularAutomaton {
+
     nextGeneration(): boolean {
         let nextCells: number[][] = [];
         for(let i = 0; i<this._cells.length; i++) {
@@ -31,5 +32,30 @@ export class GameOfLife extends CellularAutomaton {
         return nextCells.every(
             (v,i) => nextCells[i].every(
                 (v,j) => v === this._cells[i][j]));
+    }
+
+    setRandomCells(x:number, y:number):void {
+        let cells:number[][] = [];
+        for(let i= 0;i<x;i++) {
+            cells[i] = [];
+            for(let j= 0;j<y;j++) {
+                cells[i][j] = Math.floor(Math.random() * 100) < 20? 1:0;
+            }
+        }
+        this._cells = cells;
+    }
+
+    resize(i:number, j:number): void {
+        let newCells:number[][] = [];
+        for(let y= 0;y<i;y++) {
+            newCells[y] = [];
+            for(let x= 0;x<j;x++) {
+                if(typeof this._cells[y] != "undefined" && this._cells[y][x])
+                    newCells[y][x] = this._cells[y][x];
+                else
+                    newCells[y][x] = 0;
+            }
+        }
+        this._cells = newCells;
     }
 }

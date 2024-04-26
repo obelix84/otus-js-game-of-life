@@ -1,69 +1,87 @@
 import {GameOfLife} from './GameOfLife';
-import {drawGameOnCanvas} from './drawGame';
+import {drawGameOnCanvas, drawLines} from './drawGame';
 import './styles.css';
 
 
-let GM = new GameOfLife();
-GM.cells = [[0,0,0,1,0,0,0,0,0,0],
-            [0,0,0,0,0,0,1,0,0,0],
-            [0,0,1,1,0,0,1,1,0,0],
-            [0,0,1,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0,0,0],
-            [0,0,0,0,0,0,0,0,0,0],
-            [0,0,1,1,0,0,0,0,0,0],
-            [0,0,1,0,0,0,0,1,0,0],
-            [0,0,0,0,0,0,0,0,0,0]];
-
-drawGameOnCanvas('canvas', GM.cells);
-
-let mainLoop = setInterval(()=> {
-    drawGameOnCanvas('canvas', GM.cells);
-    if (!GM.nextGeneration()) {
-        clearInterval(mainLoop);
-        alert("stop");
-    }
-    console.log("draw");
-}, 1000);
-
-//GM.nextGeneration();
-//console.log(GM.cells);
-
-//drawGameOnCanvas('canvas', GM.cells);
-
-//GM.nextGeneration();
-console.log(GM.cells);
-
-
-
-
+let mainLoop: any;
+let delay: number = 1000;
 const canvas = document.getElementById('canvas');
-//canvas?.setAttribute('style',"border: 1px solid black")
-// const ctx = canvas?.getContext("2d");
-// console.log(ctx);
-// ctx.beginPath();
-// ctx.arc(75, 75, 10, 0, Math.PI*2, true);
-// ctx.closePath();
-// ctx.fill();
+let xCount: number;
+let yCount: number;
+let cellWidth: number;
+let cellHeight: number;
+
+let GM = new GameOfLife();
+
+function init() {
+    document.getElementById('start')?.addEventListener('click', start);
+    document.getElementById('stop')?.addEventListener('click', stop);
+    let xInput = <HTMLInputElement>document.getElementById('x');
+    let yInput= <HTMLInputElement>document.getElementById('y')
+    xCount = +xInput.value;
+    yCount = +yInput.value;
+    cellHeight = Math.floor((<HTMLCanvasElement>canvas)?.height / xCount);
+    cellWidth = Math.floor((<HTMLCanvasElement>canvas)?.width / yCount);
+    GM.setRandomCells(xCount, yCount);
+    drawGameOnCanvas('canvas', GM.cells);
+
+    canvas?.addEventListener('click', (event) => {
+        let c = canvas.getBoundingClientRect()
+        let x = event.clientX - c.top;
+        let y = event.clientY - c.left;
+        let i = Math.floor(x / cellWidth);
+        let j = Math.floor(y / cellHeight);
+        GM.cells[j][i] = (GM.cells[j][i] + 1)%2;
+        drawGameOnCanvas('canvas', GM.cells);
+    })
+
+    document.getElementById('resize')?.addEventListener('click', () => {
+        let newX = +xInput.value;
+        let newY = +yInput.value
+        if (newX > 0 && newY >0) {
+            GM.resize(newX, newY);
+            xCount = newX;
+            yCount = newY;
+            cellHeight = Math.floor((<HTMLCanvasElement>canvas)?.height / xCount);
+            cellWidth = Math.floor((<HTMLCanvasElement>canvas)?.width / yCount);
+            drawGameOnCanvas('canvas', GM.cells);
+        } else
+            alert('something wrong with input');
+    });
+
+    document.getElementById('random')?.addEventListener('click', random);
+
+    document.getElementById('range')?.addEventListener('input', () => {
+        delay = +(<HTMLInputElement>document.getElementById('range'))?.value;
+
+    });
+}
+function start():void {
+    document.getElementById('start')?.setAttribute('disabled', '');
+    document.getElementById('stop')?.removeAttribute('disabled');
+    mainLoop = setTimeout(function loop (){
+        mainLoop = setTimeout(loop, delay);
+        if (!GM.nextGeneration()) {
+            stop();
+        }
+        drawGameOnCanvas('canvas', GM.cells);
+    }, delay);
+}
+
+function stop():void {
+    document.getElementById('stop')?.setAttribute('disabled', '');
+    document.getElementById('start')?.removeAttribute('disabled');
+    clearTimeout(mainLoop);
+}
+
+function random():void {
+    GM.setRandomCells(xCount, yCount);
+    drawGameOnCanvas('canvas', GM.cells);
+}
 
 
-var xPosition = canvas.offsetLeft;
-let yPosition = canvas.offsetTop;
-console.log(xPosition + " " + yPosition);
-
-var c = canvas.getBoundingClientRect()
-console.log('top:' + c.top + ' left: ' + c.left +'');
+init();
 
 
 
-canvas.addEventListener('click', (event) => {
-    console.log(event);
-    console.log(event.clientX+ " " + event.clientY);
-    var c = canvas.getBoundingClientRect()
-    console.log('top:' + c.top + ' left: ' + c.left +'');
-})
 
-// const rootEl = document.querySelector("#app")
-// if (rootEl) {
-//     addForm(rootEl);
-// }

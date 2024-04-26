@@ -180,10 +180,78 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
   },
   {
     "props": {
-      "height": 99,
+      "height": 100,
+      "width": 100,
+      "x": 0,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
       "width": 99,
-      "x": 1,
-      "y": 1,
+      "x": 101,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
+      "width": 99,
+      "x": 201,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
+      "width": 99,
+      "x": 301,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
+      "width": 99,
+      "x": 401,
+      "y": 0,
     },
     "transform": [
       1,
@@ -198,9 +266,9 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 1,
+      "width": 100,
+      "x": 0,
+      "y": 101,
     },
     "transform": [
       1,
@@ -211,13 +279,46 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
       0,
     ],
     "type": "clearRect",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 101,
+            "y": 101,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
   },
   {
     "props": {
       "height": 99,
       "width": 99,
       "x": 201,
-      "y": 1,
+      "y": 101,
     },
     "transform": [
       1,
@@ -234,91 +335,6 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
       "height": 99,
       "width": 99,
       "x": 301,
-      "y": 1,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 1,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
       "y": 101,
     },
     "transform": [
@@ -351,8 +367,8 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 1,
+      "width": 100,
+      "x": 0,
       "y": 201,
     },
     "transform": [
@@ -436,8 +452,8 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 1,
+      "width": 100,
+      "x": 0,
       "y": 301,
     },
     "transform": [
@@ -521,8 +537,8 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 1,
+      "width": 100,
+      "x": 0,
       "y": 401,
     },
     "transform": [
@@ -614,46 +630,6 @@ exports[`Write cells on canvas should draw a cells on canvas 1`] = `
       0,
     ],
     "type": "closePath",
-  },
-  {
-    "props": {
-      "fillRule": "nonzero",
-      "path": [
-        {
-          "props": {},
-          "transform": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ],
-          "type": "beginPath",
-        },
-        {
-          "props": {},
-          "transform": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ],
-          "type": "closePath",
-        },
-      ],
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fill",
   },
 ]
 `;
@@ -838,10 +814,78 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   },
   {
     "props": {
-      "height": 99,
+      "height": 100,
+      "width": 100,
+      "x": 0,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
       "width": 99,
-      "x": 1,
-      "y": 1,
+      "x": 101,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
+      "width": 99,
+      "x": 201,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
+      "width": 99,
+      "x": 301,
+      "y": 0,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "clearRect",
+  },
+  {
+    "props": {
+      "height": 100,
+      "width": 99,
+      "x": 401,
+      "y": 0,
     },
     "transform": [
       1,
@@ -856,9 +900,9 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 1,
+      "width": 100,
+      "x": 0,
+      "y": 101,
     },
     "transform": [
       1,
@@ -869,13 +913,46 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
     ],
     "type": "clearRect",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 101,
+            "y": 101,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
   },
   {
     "props": {
       "height": 99,
       "width": 99,
       "x": 201,
-      "y": 1,
+      "y": 101,
     },
     "transform": [
       1,
@@ -892,91 +969,6 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       "height": 99,
       "width": 99,
       "x": 301,
-      "y": 1,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 1,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "clearRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
       "y": 101,
     },
     "transform": [
@@ -1009,8 +1001,8 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 1,
+      "width": 100,
+      "x": 0,
       "y": 201,
     },
     "transform": [
@@ -1094,8 +1086,8 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 1,
+      "width": 100,
+      "x": 0,
       "y": 301,
     },
     "transform": [
@@ -1179,8 +1171,8 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   {
     "props": {
       "height": 99,
-      "width": 99,
-      "x": 1,
+      "width": 100,
+      "x": 0,
       "y": 401,
     },
     "transform": [
@@ -1272,46 +1264,6 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
     ],
     "type": "closePath",
-  },
-  {
-    "props": {
-      "fillRule": "nonzero",
-      "path": [
-        {
-          "props": {},
-          "transform": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ],
-          "type": "beginPath",
-        },
-        {
-          "props": {},
-          "transform": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ],
-          "type": "closePath",
-        },
-      ],
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fill",
   },
   {
     "props": {},
@@ -1491,10 +1443,26 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 1,
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 100,
+            "width": 100,
+            "x": 0,
+            "y": 0,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
     },
     "transform": [
       1,
@@ -1504,14 +1472,30 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
       0,
     ],
-    "type": "fillRect",
+    "type": "fill",
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 1,
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 100,
+            "width": 99,
+            "x": 101,
+            "y": 0,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
     },
     "transform": [
       1,
@@ -1521,14 +1505,30 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
       0,
     ],
-    "type": "fillRect",
+    "type": "fill",
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 1,
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 100,
+            "width": 99,
+            "x": 201,
+            "y": 0,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
     },
     "transform": [
       1,
@@ -1538,14 +1538,30 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
       0,
     ],
-    "type": "fillRect",
+    "type": "fill",
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
-      "y": 1,
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 100,
+            "width": 99,
+            "x": 301,
+            "y": 0,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
     },
     "transform": [
       1,
@@ -1555,14 +1571,30 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
       0,
     ],
-    "type": "fillRect",
+    "type": "fill",
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 1,
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 100,
+            "width": 99,
+            "x": 401,
+            "y": 0,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
     },
     "transform": [
       1,
@@ -1572,14 +1604,30 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
       0,
     ],
-    "type": "fillRect",
+    "type": "fill",
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 101,
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 100,
+            "x": 0,
+            "y": 101,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
     },
     "transform": [
       1,
@@ -1589,7 +1637,7 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
       0,
     ],
-    "type": "fillRect",
+    "type": "fill",
   },
   {
     "props": {
@@ -1610,328 +1658,15 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
   },
   {
     "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 101,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 201,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 201,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 201,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
-      "y": 201,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 201,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 301,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 301,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 301,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
-      "y": 301,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 301,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 1,
-      "y": 401,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 101,
-      "y": 401,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 201,
-      "y": 401,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 301,
-      "y": 401,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {
-      "height": 99,
-      "width": 99,
-      "x": 401,
-      "y": 401,
-    },
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "fillRect",
-  },
-  {
-    "props": {},
-    "transform": [
-      1,
-      0,
-      0,
-      1,
-      0,
-      0,
-    ],
-    "type": "closePath",
-  },
-  {
-    "props": {
       "fillRule": "nonzero",
       "path": [
         {
-          "props": {},
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 201,
+            "y": 101,
+          },
           "transform": [
             1,
             0,
@@ -1940,19 +1675,7 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
             0,
             0,
           ],
-          "type": "beginPath",
-        },
-        {
-          "props": {},
-          "transform": [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ],
-          "type": "closePath",
+          "type": "rect",
         },
       ],
     },
@@ -1965,6 +1688,579 @@ exports[`Write cells on canvas should draw one white cell on canvas 1`] = `
       0,
     ],
     "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 301,
+            "y": 101,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 401,
+            "y": 101,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 100,
+            "x": 0,
+            "y": 201,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 101,
+            "y": 201,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 201,
+            "y": 201,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 301,
+            "y": 201,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 401,
+            "y": 201,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 100,
+            "x": 0,
+            "y": 301,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 101,
+            "y": 301,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 201,
+            "y": 301,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 301,
+            "y": 301,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 401,
+            "y": 301,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 100,
+            "x": 0,
+            "y": 401,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 101,
+            "y": 401,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 201,
+            "y": 401,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 301,
+            "y": 401,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {
+      "fillRule": "nonzero",
+      "path": [
+        {
+          "props": {
+            "height": 99,
+            "width": 99,
+            "x": 401,
+            "y": 401,
+          },
+          "transform": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ],
+          "type": "rect",
+        },
+      ],
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "fill",
+  },
+  {
+    "props": {},
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "closePath",
   },
 ]
 `;

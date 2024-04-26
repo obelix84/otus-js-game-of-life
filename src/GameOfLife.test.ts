@@ -3,6 +3,55 @@
  * */
 
 import { GameOfLife } from "./GameOfLife";
+import clearAllMocks = jest.clearAllMocks;
+
+describe("Testing random fill", () => {
+    let GM: GameOfLife;
+    beforeAll(() => {
+        GM = new GameOfLife();
+    });
+
+    it("random matrix 3x3", ()=> {
+        clearAllMocks();
+        jest.spyOn(global.Math, 'random').mockReturnValueOnce(1).mockReturnValueOnce(0)
+            .mockReturnValueOnce(0).mockReturnValueOnce(0).mockReturnValueOnce(1).mockReturnValueOnce(0)
+            .mockReturnValueOnce(1).mockReturnValueOnce(1).mockReturnValueOnce(0);
+        GM.setRandomCells(3,3);
+        expect(GM.cells).toEqual([[0,1,1], [1,0,1], [0,0,1]]);
+    });
+
+    it("random matrix 3x5", ()=> {
+        jest.clearAllMocks();
+        jest.spyOn(global.Math, 'random').mockReturnValueOnce(0).mockReturnValueOnce(1)
+            .mockReturnValueOnce(0).mockReturnValueOnce(1).mockReturnValueOnce(0).mockReturnValueOnce(0)
+            .mockReturnValueOnce(1).mockReturnValueOnce(1).mockReturnValueOnce(0).mockReturnValue(0);
+        GM.setRandomCells(3,5);
+        console.log(GM.cells);
+        expect(GM.cells).toEqual([[1,0,1,0,1], [1,0,0,1,1], [1,1,1,1,1]]);;
+    });
+
+});
+describe("Testing field resize", () => {
+    let GM: GameOfLife;
+    beforeAll(() => {
+        GM = new GameOfLife();
+    });
+
+    it("resize 5x5 to 7x7", ()=> {
+        GM.cells = [[1,1,1,1,1], [0,0,0,0,0], [1,1,1,1,1], [1,1,1,1,1], [0,0,0,0,0]];
+        GM.resize(7,7);
+        expect(GM.cells).toEqual([[1,1,1,1,1,0,0], [0,0,0,0,0,0,0], [1,1,1,1,1,0,0],
+            [1,1,1,1,1,0,0], [0,0,0,0,0,0,0], [0,0,0,0,0,0,0], [0,0,0,0,0,0,0]]);
+    });
+
+    it("resize 7x7 to 3x3", ()=> {
+        GM.cells = [[1,1,1,1,1,0,0], [0,0,0,0,0,0,0], [1,1,1,1,1,0,0],
+            [1,1,1,1,1,0,0], [0,0,0,0,0,0,0], [0,0,0,0,0,0,0], [0,0,0,0,0,0,0]];
+        GM.resize(3,3);
+        expect(GM.cells).toEqual([[1,1,1], [0,0,0], [1,1,1]]);;
+    });
+
+});
 
 describe("Testing stopping rule", () => {
     let GM: GameOfLife;

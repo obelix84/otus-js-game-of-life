@@ -14,7 +14,7 @@ describe("Write cells on canvas", () => {
         canvas.width = 500;
         canvas.height = 500;
         document.body.appendChild(canvas);
-        ctx = canvas?.getContext("2d");
+        ctx = <CanvasRenderingContext2D>canvas?.getContext("2d");
     });
 
     it(`should draw a cells on canvas`, function() {
