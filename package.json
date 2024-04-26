@@ -75,7 +75,8 @@
       }
     },
     "setupFiles": [
-      "jest-localstorage-mock", "jest-canvas-mock"
+      "jest-localstorage-mock",
+      "jest-canvas-mock"
     ]
   }
 }

@@ -14,25 +14,25 @@ module.exports = {
   resolve: {
     extensions: [".js", ".ts"],
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-        {
+      {
         test: /\.(?:js|mjs|cjs|ts)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
-      }
+          loader: "babel-loader",
+        },
+      },
     ],
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     compress: true,
     hot: true,

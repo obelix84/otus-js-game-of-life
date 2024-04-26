@@ -1,17 +1,19 @@
 export abstract class CellularAutomaton {
-    protected _cells: number[][];
-    get cells(): number[][] {
-        return this._cells;
-    }
+  protected _cells: number[][];
 
-    set cells(value: number[][]) {
-        this._cells = value;
-    }
-    constructor() {
-        this._cells = [[]];
-    }
+  get cells(): number[][] {
+    return this._cells;
+  }
 
-    abstract nextGeneration():boolean;
-    abstract stoppingRule(nextCells: number [][]): boolean;
+  set cells(value: number[][]) {
+    this._cells = value;
+  }
+
+  constructor() {
+    this._cells = [[]];
+  }
+
+  abstract nextGeneration(): boolean;
+
+  abstract stoppingRule(nextCells: number[][]): boolean;
 }
-

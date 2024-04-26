@@ -9,6 +9,6 @@ module.exports = {
         corejs: 3, // default would be 2
       },
     ],
-    "@babel/preset-typescript"
+    "@babel/preset-typescript",
   ],
 };
